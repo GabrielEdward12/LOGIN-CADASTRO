@@ -5,6 +5,7 @@ session_start();
 if (!isset($_SESSION['usuario'])) {
     echo "Acesso negado! Você não tem permissão para acessar essa página.<br>";
     echo "<a href = 'index.php'>Voltar</a>";
+    exit;
 
 }
 ?>
@@ -19,7 +20,7 @@ if (!isset($_SESSION['usuario'])) {
     <h1>Acesso restrito</h1>
     <br>
     <h2>Bem-Vindo, <?php echo $_SESSION['usuario']; ?>!</h2>
-    <p>Seu email, ,<?php echo $_SESSION['email']; ?>!</p>
+    <p>Seu email, <?php echo $_SESSION['email']; ?>!</p>
     <a href="logout.php">Sair</a>
 </body>
 </html>
