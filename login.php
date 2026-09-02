@@ -14,6 +14,8 @@ if ($resultado->num_rows > 0) {
     if ($senha == $usuario["senha"]) {
         $_SESSION["usuario"] = $usuario["nome"];
         $_SESSION["email"] = $usuario["email"];
+        $_SESSION["perfil"] = $usuario["Perfil"];
+
         header("Location: painel.php");
         exit;
         echo "Login realizado com sucesso!";

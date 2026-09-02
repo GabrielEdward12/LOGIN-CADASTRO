@@ -86,8 +86,6 @@ if ($conexao->query($sql)) {
     echo "<br>";
     echo "<a href='cadastro.php'> Voltar </a>";
 
-
-
 } else {
     echo "Erro ao cadastrar: " . $conexao->error;
 }
