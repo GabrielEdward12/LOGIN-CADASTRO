@@ -46,9 +46,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </header>
     <br>
     <nav>
-        <a href="index.php">Início</a>
-        <a href="cadastro.php">Cadastro de Produtos</a>
-        <a href="listar.php">Lista de Produtos</a>
+        <a href="cadastro2.php">Cadastro de Produtos</a>
+        <a href="listar3.php">Lista de Produtos</a>
     </nav>
 
     <div class="cadastro">
@@ -70,7 +69,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <br>
             <input type="number" name="preco" required placeholder="Preço">
             <br><br>
-            <label>Digite a quantidade: </label>
             <br>
             <input class="cadas" type="submit" name="cadastrar" value="Cadastrar">
         </form>

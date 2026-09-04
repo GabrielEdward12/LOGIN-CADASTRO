@@ -30,23 +30,26 @@ if (!isset($_SESSION['usuario'])) {
     if ($_SESSION['perfil'] == 'admin') {
         echo "<p>Você tem privilégios de administrador.</p>";
         echo "<p>Você pode gerenciar o sistema.";
-        echo "<a href='admin.php'>Acessar a área de administração.</a>";
+        echo "<a href='cadastro2.php'>Acessar a área de administração.</a>";
     }
     //verificando o perfil de professor
-    if ($_SESSION['perfil'] == 'prof') {
+    if ($_SESSION['perfil'] == 'func') {
         echo "<p>Você tem privilégios de professor.</p>";
         echo "<p>Você pode gerenciar o sistema.";
-        echo "<a href='professor.php'>Acessar a área de Aluno.</a>";
+        echo "<br>";
+        echo "<a href='cadastro2.php'>Acessar a área de Funcionários.</a>";
     }
     //verificando o perfil de aluno
-    if ($_SESSION['perfil'] == 'aluno') {
-        echo "<p>Você tem privilégios de Aluno.</p>";
+    if ($_SESSION['perfil'] == 'cliente') {
+        echo "<p>Você tem privilégios de Cliente.</p>";
         echo "<p>Você pode gerenciar o sistema.";
-        echo "<a href='aluno.php'>Acessar a área de Aluno.</a>";
+        echo "<br><br>";
+        echo "<a href='listar2.php'>Acessar a área de Cliente.</a>";
     }
 
 
     ?>
+    <br><br>
     <a href="logout.php">Sair</a>
 </body>
 

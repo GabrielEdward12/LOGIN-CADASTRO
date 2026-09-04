@@ -39,21 +39,22 @@ $resultado = $conexao->query($sql);
 
 </head>
 
-<body>
+<body class="body">
+
     <header>
-        <h1>Nome da Empresa e logotipo </h1>
-    <nav>
-        <a href="index_pdf2.php">Lista de Usuários</a>
-        <a href="listar.php">Lista de Produtos</a> 
-        <a href="index_pdf.php">Relatório em PDF</a>
-    </nav>
+        <h1>Lista de Produtos </h1>
     </header>
     <br>
+    <nav>
+        <a href="painel.php">Perfil</a>
+        <a href="listar.php">Lista de Produtos</a>
+    </nav>
+    </header>
+    <br><br>
     <section>
 
         <table border="1">
             <tr>
-                <th>Código</th>
                 <th>Nome</th>
                 <th>Descrição</th>
                 <th>Preço</th>
@@ -63,7 +64,7 @@ $resultado = $conexao->query($sql);
             <?php
             while ($linha = $resultado->fetch_assoc()) {
                 echo "<tr>";
-                echo "<td>" . $linha['codigo'] . "</td>";
+
                 echo "<td>" . $linha['nome'] . "</td>";
                 echo "<td>" . $linha['descricao'] . "</td>";
                 echo "<td>" . $linha['preco'] . "</td>";

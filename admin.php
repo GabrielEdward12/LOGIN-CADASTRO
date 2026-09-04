@@ -13,6 +13,7 @@ if (!isset($_SESSION['usuario'])) {
         echo "<p>Acesso negado! Você não tem permissão para acessar essa página.</p>";
         echo "<br>";
         echo "<a href='index.php'>Voltar.</a>";
+        exit;
     }
 ?>
 <!DOCTYPE html>

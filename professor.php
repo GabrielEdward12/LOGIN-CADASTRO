@@ -9,25 +9,37 @@ if (!isset($_SESSION['usuario'])) {
     echo " <a href='index.php'>Voltar</a>";
     exit;
 }
-  if ($_SESSION['perfil'] != 'prof') {
-        echo "<p>Acesso negado! Você não tem permissão para acessar essa página.</p>";
-        echo "<br>";
-        echo "<a href='index.php'>Voltar</a>";
-    }
+if ($_SESSION['perfil'] != 'func') {
+    echo "<p>Acesso negado! Você não tem permissão para acessar essa página.</p>";
+    echo "<br>";
+    echo "<a href='index.php'>Voltar</a>";
+    exit;
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adimin Page</title>
+    <title>Página do Funcionário</title>
 </head>
+
 <body>
-    <h1>Bem-vindo, Professor!</h1>
-    <p>Você tem acesso total a esta página.</p>
-    <p><?php echo "Seu perfil é: " . $_SESSION['perfil']; ?></p>
+    <header>
+        <h1>Nome da empresa e logotipo</h1>
+        <br />
+        <nav>
+            <a href="cadastro.html">Início</a>
+            <a href="listar3.php">Entrar</a>
+        </nav>
+    </header>
+
+
+
     <br>
     <a href="index.php">Voltar</a>
-    
+
 </body>
+
 </html>

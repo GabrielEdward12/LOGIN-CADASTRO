@@ -26,8 +26,8 @@
         <select name="perfil">
             <option value="">Escolha um perfil</option>
             <option value="admin">Administrador</option>
-            <option value="prof">Professor</option>
-            <option value="aluno">Aluno</option>
+            <option value="func">Funcionário</option>
+            <option value="cliente">Cliente</option>
         </select>
         <br><br>
         <input type="submit" value="Entrar">

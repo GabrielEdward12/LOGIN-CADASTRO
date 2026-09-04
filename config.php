@@ -12,6 +12,6 @@ if ($conexao -> connect_error){
     echo "Conexão falhou:". $conexao->connect_error;  
 
 }else{
-    echo ("Conexão realizada com sucesso!");
+    echo ("");
 }
 ?>
